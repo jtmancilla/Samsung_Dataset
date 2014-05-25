@@ -24,7 +24,7 @@ ActLabel <- read.table("D:\\RStudio\\UCI HAR Dataset\\activity_labels.txt")
 SubjectTr <- read.table("D:\\RStudio\\UCI HAR Dataset\\train\\subject_train.txt")
 SubjectTe <- read.table("D:\\RStudio\\UCI HAR Dataset\\test\\subject_test.txt")
 Subject <- rbind(SubjectTr,SubjectTe)
-names(subject) <- "subject"
+names(Subject) <- "subject"
 Data <- cbind(DataLabel3,Subject)
 names(ActLabel) <- c("label","action")
 MergeData = merge(Data, ActLabel, by.x="label",by.y="label",all=TRUE)
