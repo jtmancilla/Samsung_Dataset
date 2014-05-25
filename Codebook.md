@@ -1,5 +1,6 @@
 Code Book - Samsung Data Set
 ========================================================
+The variables using in the Data are:
 
 ### subject
 This is an identifier number of the subject who performed the activity for each experiment.
